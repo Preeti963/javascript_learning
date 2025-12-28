@@ -28,3 +28,16 @@ console.log(result);
 
 //5. Type operator
 console.log(typeof "hello"); // output: string
+console.log(typeof 123); // output: number
+
+// better to use === instade of ==
+
+// we can use var before declaring variables
+//example
+console.log(a); // undefined
+var a = 10;
+
+// we cant use const with out declaring variables
+//example
+console.log(b); // Error
+const b = 20;
