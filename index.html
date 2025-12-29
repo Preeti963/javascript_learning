@@ -12,15 +12,48 @@
        <!-- <script src ="function.js"> </script> -->
         <!-- <script src ="ifelse.js"> </script> -->
           <!-- <script src ="arrays.js"> </script>  -->
-           <script src ="object.js"> </script> 
-
+           <!-- <script src ="object.js"> </script>  -->
+<style>
+    .calculator {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    input{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 80%;
+    }
+    button {
+        margin: 0.3rem;
+    }
+</style>
          </head>
  <body> 
-    <button id="myBtn">Click me</button>
-    <input type="text" id="username"/>
-    <div id="box"
-    style="width:100px; height: 100px; background-color: black"></div>
+    <!-- <h1 id="main-heading">Main Heading</h1>
+     <p id="message">Helllo Js</p>
+
+    <button id ="clickMe">click Me</button> -->
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Enter first number" />
+        <input type="number" id="num2" placeholder="Enter second number" />
+
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+
+        <p id="result">Result:</p>
+
+    </div>
+
     <!-- <script src ="events.js"> </script>  -->
+      <!-- <script src ="dom.js"> </script>  -->
+      <!-- <script src ="changeElements.js"> </script>  -->
+       <script src ="calculator.js"> </script>
  </body>
  </html>
          
