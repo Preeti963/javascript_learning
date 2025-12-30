@@ -13,7 +13,7 @@
         <!-- <script src ="ifelse.js"> </script> -->
           <!-- <script src ="arrays.js"> </script>  -->
            <!-- <script src ="object.js"> </script>  -->
-<style>
+<!-- <style>
     .calculator {
         max-width: 300px;
         margin: auto;
@@ -30,6 +30,30 @@
     button {
         margin: 0.3rem;
     }
+</style> -->
+
+<style>
+    .todo-container{
+        max-width: 400px;
+        margin: auto;
+        padding: 1;
+        text-align: center;
+    }
+    ul{
+    list-style: none;
+    padding: 0;
+    }
+    li{
+        background: antiquewhite;
+        margin: 5px 0;
+        padding: 10px;
+        position: relative;
+    }
+    li button{
+        position: absolute;
+        right: 10px;
+    }
+
 </style>
          </head>
  <body> 
@@ -37,7 +61,7 @@
      <p id="message">Helllo Js</p>
 
     <button id ="clickMe">click Me</button> -->
-    <div class="calculator">
+    <!-- <div class="calculator">
         <input type="number" id="num1" placeholder="Enter first number" />
         <input type="number" id="num2" placeholder="Enter second number" />
 
@@ -46,14 +70,36 @@
         <button onclick="multiply()">Multiply</button>
         <button onclick="divide()">Divide</button>
 
-        <p id="result">Result:</p>
-
+        <p id="result">Result:</p> -->
+        <!-- <div id="container">
+            <button id="addBtn">Add Item</button>
+             <button id="removeBtn">Remove Last Item</button>
+            <ul id="itemList"></ul>
+        </div> -->
+    <!-- <form id="myform">
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="password">
+        <button>Submit</button>
+    </form>
+    <p id="error" style="color:red"></p> -->
+    <div class="todo-container">
+        <h2>My To-Do-List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task"/>
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"> </ul>
     </div>
+
+    <!-- </div> -->
 
     <!-- <script src ="events.js"> </script>  -->
       <!-- <script src ="dom.js"> </script>  -->
       <!-- <script src ="changeElements.js"> </script>  -->
-       <script src ="calculator.js"> </script>
+       <!-- <script src ="addRemoveElements.js"> </script> -->
+        <!-- <script src ="formValidation.js"> </script> -->
+        <script src ="todoList.js"> </script>
+       <!-- <script src ="calculator.js"> </script> -->
+       
  </body>
  </html>
          
