@@ -27,3 +27,6 @@ const user3 ={name:"minz",age:"30",city:"ktm"};
 
 const{name, ...rest}=user3;
 console.log(rest)
+// real life use:
+// accept dynamic function argruments
+// seperate known an unknown object properties

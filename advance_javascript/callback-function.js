@@ -19,6 +19,6 @@ setTimeout(function(){
     console.log("3 second later")
 },3000);// 3 sec
 const item = [1,2,3];
-items.forEach(function(item){
+item.forEach(function(item){
     console.log(item)
 })
