@@ -7,20 +7,20 @@ async function fetchPosts(){
         if(!response.ok){
             throw new Error("Network response was not ok");
         }
-        const posts = await response.json();
-        console.log(posts)
-        displayPosts(posts)
-        console.log(posts)
+        const postsData = await response.json();
+        displayPosts(postsData);
     }catch (error){
-
+        console.error("Error fetching posts:",error);
     }
 }
+
 function displayPosts(data){
-    loading.style.display = "name";
-    posts.forEach(post =>{
+    loading.style.display = "none";  // hide loading
+    data.forEach(post => {
         const li = document.createElement("li");
         li.textContent = post.title;
-        postsContainer.appendChild(li)
-    })
+        postsContainer.appendChild(li);
+    });
 }
-fetchPosts()
+
+fetchPosts();

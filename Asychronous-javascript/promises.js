@@ -24,4 +24,22 @@ const orderFood = new Promise(function(resolve, rejected){
     }else{
         rejected("sorry, we're out of service")
     }
-})
+});
+ //3. Using  .then() and  .catch()
+//to handel a Promise we use .then() and .catch when it fails
+
+// orderFood.then(function(message){
+//     console.log(message)
+// })
+orderFood.then(message => console.log(message)).catch(error => console.log(error))
+
+//4. promise chaining
+
+loginUser()
+    .then(greetUserData)
+    .then(getUserPosts)
+    .then(posts=> console.log(posts))
+    .catch(error=>console.log(error))
+
+// Each .then() waits for the previous one to finish before moving on - making async steps
+//run in order.without nested callbacks.
